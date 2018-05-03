@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+let lightControl = LightControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +21,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    @IBAction func redButton(_ sender: Any) {
+        self.lightControl.colorLights(UIColor.red)
+    }
+    
+    @IBAction func greenButton(_ sender: Any) {
+        self.lightControl.colorLights(UIColor.green)
+    }
+    
+    @IBAction func blueButton(_ sender: Any) {
+        self.lightControl.colorLights(UIColor.blue)
+    }
+    
+    @IBAction func whiteButton(_ sender: Any) {
+        self.lightControl.colorLights(UIColor.white)
+    }
+    
+    
 }
 

@@ -15,6 +15,7 @@
 		69584F4D209B79CA00C413AB /* Colorchanging_lightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69584F4C209B79CA00C413AB /* Colorchanging_lightTests.swift */; };
 		69584F58209B79CA00C413AB /* Colorchanging_lightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69584F57209B79CA00C413AB /* Colorchanging_lightUITests.swift */; };
 		69584F67209B79E500C413AB /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69584F66209B79E500C413AB /* HomeKit.framework */; };
+		69584F69209B7AE800C413AB /* LightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69584F68209B7AE800C413AB /* LightInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		69584F57209B79CA00C413AB /* Colorchanging_lightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorchanging_lightUITests.swift; sourceTree = "<group>"; };
 		69584F59209B79CA00C413AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69584F66209B79E500C413AB /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		69584F68209B7AE800C413AB /* LightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightInfo.swift; sourceTree = "<group>"; };
+		69584F6A209B7B8300C413AB /* sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +104,10 @@
 		69584F36209B79CA00C413AB /* Colorchanging light */ = {
 			isa = PBXGroup;
 			children = (
+				69584F6A209B7B8300C413AB /* sample.entitlements */,
 				69584F37209B79CA00C413AB /* AppDelegate.swift */,
 				69584F39209B79CA00C413AB /* ViewController.swift */,
+				69584F68209B7AE800C413AB /* LightInfo.swift */,
 				69584F3B209B79CA00C413AB /* Main.storyboard */,
 				69584F3E209B79CA00C413AB /* Assets.xcassets */,
 				69584F40209B79CA00C413AB /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69584F3A209B79CA00C413AB /* ViewController.swift in Sources */,
+				69584F69209B7AE800C413AB /* LightInfo.swift in Sources */,
 				69584F38209B79CA00C413AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
