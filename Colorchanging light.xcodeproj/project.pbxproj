@@ -51,7 +51,7 @@
 		69584F59209B79CA00C413AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69584F66209B79E500C413AB /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		69584F68209B7AE800C413AB /* LightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightInfo.swift; sourceTree = "<group>"; };
-		69584F6A209B7B8300C413AB /* sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sample.entitlements; sourceTree = "<group>"; };
+		69584F6B209B7C3400C413AB /* Colorchanging light.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Colorchanging light.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		69584F36209B79CA00C413AB /* Colorchanging light */ = {
 			isa = PBXGroup;
 			children = (
-				69584F6A209B7B8300C413AB /* sample.entitlements */,
+				69584F6B209B7C3400C413AB /* Colorchanging light.entitlements */,
 				69584F37209B79CA00C413AB /* AppDelegate.swift */,
 				69584F39209B79CA00C413AB /* ViewController.swift */,
 				69584F68209B7AE800C413AB /* LightInfo.swift */,
@@ -211,6 +211,11 @@
 					69584F33209B79CA00C413AB = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 					69584F47209B79CA00C413AB = {
 						CreatedOnToolsVersion = 9.2;
@@ -444,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Colorchanging light/Colorchanging light.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCX585E792;
 				INFOPLIST_FILE = "Colorchanging light/Info.plist";
@@ -459,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Colorchanging light/Colorchanging light.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LCX585E792;
 				INFOPLIST_FILE = "Colorchanging light/Info.plist";
