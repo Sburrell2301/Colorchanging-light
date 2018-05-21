@@ -29,7 +29,7 @@ class LightControl : NSObject, HMHomeManagerDelegate {
     func colorLights(_ color: UIColor) {
         
         DispatchQueue.global().async(execute: {
-            //this is going to be my app so it will work for the final yay.
+            
             var brightness : CGFloat = 0.0
             var hue : CGFloat = 0.0
             var saturation : CGFloat = 0.0
